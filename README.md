@@ -49,3 +49,13 @@ Est enim moderatio rei fatalis. Nihil proficit sicut intemperantia.
 
 …
 ```
+
+## Ok, but why?
+
+Fair question. It's an attempt at sizecoding to produce an interesting, non-trivial “novel” that's actually readable (if you can read Latin). There may be duplicate fortunes, depending on the whims of fortune's inherent randomness; if you ask me that's both outside of the scope of this exercise, and also a feature.
+
+## NaNoWhatNow?
+
+See other NaNoGenMo (National Novel Generation Month) entries at https://nanogenmo.github.io
+
+The idea/blame for NanoNaNoGenMo (#NNNGM) lies with Nick Montfort: https://nickm.com/post/2019/11/nano-nanogenmo-or-nnngm/
