@@ -2,7 +2,7 @@
 
 Nano-NaNoGenMo22 entry that translates fortunes into Latin. 
 
-239 bytes, by my count (though it could probably be shortened by a more experienced Pythonista)
+The code weighs in at 239 bytes, by my count (though it could probably be shortened by a more experienced Pythonista) and the output is 50,062 words long.
 
 ## Code
 
