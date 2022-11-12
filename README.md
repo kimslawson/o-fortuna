@@ -1,6 +1,6 @@
 # O Fortuna
 
-Nano-NaNoGenMo22 entry that translates fortunes into Latin. 
+NanoNaNoGenMo 2022 entry that translates fortunes into Latin. 
 
 The code weighs in at 239 bytes, by my count (though it could probably be shortened by a more experienced Pythonista) and the output is 50,062 words long.
 
