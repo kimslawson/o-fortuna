@@ -6,7 +6,7 @@ The code weighs in at 239 bytes, by my count (though it could probably be shorte
 
 ## Code
 
-```
+```Python
 from googletrans import Translator
 import subprocess
 w=0
