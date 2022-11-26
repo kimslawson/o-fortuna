@@ -1,21 +1,16 @@
 # O Fortuna
 
-NanoNaNoGenMo 2022 entry that translates fortunes into Latin. 
+NanoNaNoGenMo 2022 entry that translates fortunes into Latin. The first version had a dependency on a locally-installed version of fortune(1) but this version dispenses with that, instead using the fortune API documented at https://helloacm.com/fortune/.
 
-The code weighs in at 239 bytes, by my count (though it could probably be shortened by a more experienced Pythonista) and the output is 50,062 words long.
+The code weighs in at 233 bytes, by my count (thanks to pestis for helping with sizecoding). The output is 50,062 words long and took to run (HTTP is inefficient even over fast connections, especially with lots of tiny calls). Google Translate only allows small requests with the free tier, so I couldn't translate it all in one go.
 
 ## Code
 
 ```Python
-from googletrans import Translator
-import subprocess
+import googletrans as g,requests as r
 w=0
-while w<50000:
-    f=subprocess.check_output(['fortune']).decode('utf-8')
-    t=Translator()
-    r=t.translate(f, dest='la')
-    print(r.text, end='\n\n')
-    w+=len(r.text.split())
+e='unicode_escape'
+while w<5e4:t=g.Translator().translate(r.get('https://api.justyy.workers.dev/api/fortune').text.encode('raw_'+e).decode(e),'la').text.strip('"');print(t);w+=len(t.split())
 ```
 
 ## Sample output
@@ -49,6 +44,10 @@ Est enim moderatio rei fatalis. Nihil proficit sicut intemperantia.
 
 …
 ```
+
+## The Great, er, Latin Novel
+
+Here's the output: [50000 words, right here](o_fortuna.txt).
 
 ## Ok, but why?
 
