@@ -2,7 +2,7 @@
 
 NanoNaNoGenMo 2022 entry that translates fortunes into Latin. The first version had a dependency on a locally-installed version of fortune(1) but this version dispenses with that, instead using the fortune API documented at https://helloacm.com/fortune/.
 
-The code weighs in at 233 bytes, by my count (thanks to pestis for helping with sizecoding). The output is 50,062 words long and took to run (HTTP is inefficient even over fast connections, especially with lots of tiny calls). Google Translate only allows small requests with the free tier, so I couldn't translate it all in one go.
+The code weighs in at 233 bytes, by my count (thanks to pestis for helping with sizecoding). The output is 50,009 words long and took 53 minutes to generate (HTTP is inefficient even over fast connections, especially with lots of tiny calls). Google Translate only allows small requests with the free tier, so I couldn't translate it all in one go.
 
 ## Code
 
