@@ -1,9 +1,4 @@
-from googletrans import Translator
-import subprocess
+import googletrans as g,requests as r
 w=0
-while w<50000:
-    f=subprocess.check_output(['fortune']).decode('utf-8')
-    t=Translator()
-    r=t.translate(f, dest='la')
-    print(r.text, end='\n\n')
-    w+=len(r.text.split())
+e='unicode_escape'
+while w<5e4:t=g.Translator().translate(r.get('https://api.justyy.workers.dev/api/fortune').text.encode('raw_'+e).decode(e),'la').text.strip('"');print(t);w+=len(t.split())
