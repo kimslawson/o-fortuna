@@ -47,7 +47,7 @@ Est enim moderatio rei fatalis. Nihil proficit sicut intemperantia.
 
 ## The Great, er, Latin Novel
 
-Here's the output: [50009 words, right here](o_fortuna.txt).
+Here's the output: [50009 words, right here](o_fortuna.txt) and [a PDF version](o-fortuna.pdf), nicely typeset in LaTeX.
 
 ## Ok, but why?
 
